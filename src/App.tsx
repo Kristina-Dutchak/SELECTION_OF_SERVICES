@@ -9,11 +9,12 @@ import Img8 from "./assets/8.png";
 import Img9 from "./assets/9.png";
 import Img10 from "./assets/10.png";
 import styles from "./App.module.css";
+import { WardrobeBreakdown } from "./ui-components/advert-container/WardrobeBreakdown";
 
 function App() {
   return (
     <>
-      <img src={Img1} className={styles.Img} alt="img" />
+      {/* <img src={Img1} className={styles.Img} alt="img" />
       <img src={Img2} className={styles.Img} alt="img" />
       <img src={Img3} className={styles.Img} alt="img" />
       <img src={Img4} className={styles.Img} alt="img" />
@@ -22,7 +23,8 @@ function App() {
       <img src={Img7} className={styles.Img} alt="img" />
       <img src={Img8} className={styles.Img} alt="img" />
       <img src={Img9} className={styles.Img} alt="img" />
-      <img src={Img10} className={styles.Img} alt="img" />
+      <img src={Img10} className={styles.Img} alt="img" /> */}
+      <WardrobeBreakdown />
     </>
   );
 }
