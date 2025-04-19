@@ -43,6 +43,8 @@ import {
 import { SelectionService } from "./ui-components/selection-service/Selection.Service";
 import { Practic } from "./ui-components/practic/Practic";
 import { Modeton } from "./ui-components/modeton/Modeton";
+import { ServiceGive } from "./ui-components/service-give/ServiceGive";
+import { Consult } from "./ui-components/consult/Consult";
 
 function App() {
   return (
@@ -50,6 +52,7 @@ function App() {
       <SelectionService />
       <Practic />
       <Modeton />
+      <ServiceGive />
       <ServiceType
         img={img5}
         title={WARDROBE_TITLE}
@@ -90,6 +93,7 @@ function App() {
         happenList={KEY_WARDROBE_HAPPEN_LIST}
         getList={KEY_WARDROBE_GET_LIST}
       />
+      <Consult />
     </div>
   );
 }
