@@ -85,9 +85,9 @@
   }
 
   .title {
-    margin-top: 55%;
+    margin-top: 300px;
     width: 96%;
-    font-size: 45px;
+    font-size: 40px;
     display: flex;
     align-self: center;
   }

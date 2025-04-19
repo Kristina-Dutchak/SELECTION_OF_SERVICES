@@ -4,6 +4,7 @@ import { Image } from "../Image/Image";
 import { classes } from "../../shared/services/classes";
 
 import styles from "./serviceType.module.css";
+import { MobileInfo } from "./MobileInfo";
 
 type Price = {
   price: string;
@@ -27,6 +28,7 @@ export const ServiceType = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [showInfo, setShow] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,8 +45,8 @@ export const ServiceType = ({
     };
   }, []);
 
-  const showInfo = () => {
-    console.log("show info");
+  const handleShowInfo = () => {
+    setShow((prev) => !prev);
   };
 
   console.log("IS VISIBLE: ", isVisible);
@@ -61,8 +63,10 @@ export const ServiceType = ({
             <span className={styles.title}>{title}</span>
             <div className={styles.pricesContainer}>
               <div className={styles.moreInfo}>
-                <Button onClick={showInfo}>
-                  <span className={styles.more}>ДЕТАЛЬНІШЕ</span>
+                <Button onClick={handleShowInfo}>
+                  <span className={styles.more}>
+                    {!showInfo ? "ДЕТАЛЬНІШЕ" : "СХОВАТИ"}
+                  </span>
                 </Button>
               </div>
               <div className={styles.service}>
@@ -95,7 +99,7 @@ export const ServiceType = ({
               </ul>
             </div>
             <div className={styles.listExplain}>
-              <span className={styles.titleFullInfo}>ЯК ВІДБУВАЄТЬСЯ?</span>
+              <span className={styles.titleFullInfo}>ЩО ВИ ОТРИМАЄТЕ?</span>
               <ul className={styles.list}>
                 {getList.map((item) => (
                   <li key={item} className={styles.listItem}>
@@ -107,6 +111,9 @@ export const ServiceType = ({
           </div>
         </div>
       </div>
+      {showInfo && (
+        <MobileInfo whatIs={whatIs} happenList={happenList} getList={getList} />
+      )}
       <Image src={img} className={styles.imagePerson} alt="img_5" />
     </div>
   );
