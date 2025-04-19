@@ -1,0 +1,85 @@
+.practicContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #a0a0a0;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 30%;
+  height: auto;
+}
+
+.titleContainer {
+  color: #fff;
+  font-weight: 900;
+  text-align: left;
+  position: relative;
+  margin-top: 5%;
+  left: 10%;
+}
+
+.name {
+  font-size: 64px;
+  margin: 15px 0;
+}
+
+.profession {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.explainList {
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  position: relative;
+  margin-top: 10%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: start;
+}
+
+@media (max-width: 1024px) {
+  .practicContainer {
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 1050px;
+  }
+
+  .image {
+    position: absolute;
+    z-index: 10;
+    width: 358px;
+    height: auto;
+    display: flex;
+    align-self: end;
+    /* left: 30%; */
+    right: -8%;
+    bottom: 0;
+  }
+
+  .explanationsContainer {
+    width: 358px;
+  }
+
+  .explainList {
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 231px;
+  }
+
+  .titleContainer {
+    position: static;
+    width: 365px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}

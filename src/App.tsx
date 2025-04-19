@@ -41,11 +41,15 @@ import {
   WHAT_IS_KEY_WARDROBE,
 } from "./shared/services/constants/key_wardrobe";
 import { SelectionService } from "./ui-components/selection-service/Selection.Service";
+import { Practic } from "./ui-components/practic/Practic";
+import { Modeton } from "./ui-components/modeton/Modeton";
 
 function App() {
   return (
     <div className={styles.App}>
       <SelectionService />
+      <Practic />
+      <Modeton />
       <ServiceType
         img={img5}
         title={WARDROBE_TITLE}
