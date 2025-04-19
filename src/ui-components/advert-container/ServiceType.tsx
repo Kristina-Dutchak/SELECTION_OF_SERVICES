@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Button } from "../Button/Button";
 import { Image } from "../Image/Image";
-import { classes } from "../../shared/services/classes";
 
 import styles from "./serviceType.module.css";
 import { MobileInfo } from "./MobileInfo";
@@ -26,40 +25,17 @@ export const ServiceType = ({
   happenList: string[];
   getList: string[];
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
   const [showInfo, setShow] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
-  }, []);
 
   const handleShowInfo = () => {
     setShow((prev) => !prev);
   };
 
-  console.log("IS VISIBLE: ", isVisible);
-
   return (
-    <div ref={ref} className={styles.advertContainer}>
+    <div className={styles.advertContainer}>
       <div className={styles.fullExplanation}>
         <div className={styles.explanations}>
-          <div
-            className={classes(styles.explanationContainer, {
-              [styles.visible]: isVisible,
-            })}
-          >
+          <div className={styles.explanationContainer}>
             <span className={styles.title}>{title}</span>
             <div className={styles.pricesContainer}>
               <div className={styles.moreInfo}>

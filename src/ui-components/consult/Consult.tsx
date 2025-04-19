@@ -8,7 +8,7 @@ export const Consult = () => {
     <div className={styles.consultContainer}>
       <div className={styles.overlay}></div>
       <div className={styles.infoContainer}>
-        <p className={styles.freeInfo}>
+        <div className={styles.freeInfo}>
           <p className={styles.explain}>
             Якщо ви вагаєтеся, з чого почати, пропоную{" "}
             <span className={styles.importantInfo}>
@@ -18,7 +18,7 @@ export const Consult = () => {
             та підберемо оптимальний формат співпраці.
           </p>
           <p className={styles.title}>ЗАПИС НА КОНСУЛЬТАЦІЮ</p>
-        </p>
+        </div>
         <p className={styles.mobilePhone}>
           ТЕЛЕФОН: <span className={styles.number}>+ 380 68 07 11 707</span>
         </p>
