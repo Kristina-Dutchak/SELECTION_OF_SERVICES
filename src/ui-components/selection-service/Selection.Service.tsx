@@ -12,6 +12,7 @@ export const SelectionService = () => {
           ПЕРСОНАЛЬНОЇ СТИЛІСТКИ КРІСТІНИ ДУТЧАК
         </div>
       </div>
+      <div className={styles.overlay}></div>
       <Image className={styles.image} src={img1} alt="img1" />
     </div>
   );
