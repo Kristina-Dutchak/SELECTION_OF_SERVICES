@@ -87,14 +87,14 @@
   .title {
     margin-top: 300px;
     width: 96%;
-    font-size: 38px;
+    font-size: 36px;
     display: flex;
     align-self: center;
   }
 
   .explain {
     width: 90%;
-    margin-left: 2%;
+    margin-left: 3%;
     margin-top: 15%;
   }
 

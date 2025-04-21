@@ -44,12 +44,24 @@
   text-align: start;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 1024px) {
   .practicContainer {
     justify-content: start;
     align-items: center;
     flex-direction: column;
     height: 1100px;
+    width: 100%;
+  }
+
+  .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 
   .image {
@@ -64,22 +76,22 @@
   }
 
   .explanationsContainer {
-    width: 358px;
     z-index: 20;
+    width: 100%;
   }
 
   .explainList {
-    box-sizing: border-box;
     font-size: 20px;
     width: 231px;
   }
 
+  .explainItem {
+    width: 100%;
+  }
+
   .titleContainer {
     position: static;
-    width: 365px;
     margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+    width: 100%;
   }
 }
