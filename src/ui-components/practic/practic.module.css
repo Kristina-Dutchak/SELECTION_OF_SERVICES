@@ -21,6 +21,15 @@
   left: 10%;
 }
 
+.explanationsContainer {
+  position: relative;
+  width: 30%;
+}
+
+.profession {
+  width: 70%;
+}
+
 .name {
   font-size: 64px;
   margin: 15px 0;
@@ -36,7 +45,7 @@
   font-weight: 300;
   font-size: 30px;
   position: relative;
-  margin-top: 10%;
+  margin-top: 30%;
   right: 5%;
   display: flex;
   flex-direction: column;
@@ -47,6 +56,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -83,6 +93,7 @@
   .explainList {
     font-size: 20px;
     width: 231px;
+    margin-top: 20%;
   }
 
   .explainItem {
