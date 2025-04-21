@@ -7,8 +7,9 @@
 }
 
 .imagePerson {
-  width: 33.4%;
+  width: 35%;
   height: auto;
+  object-fit: cover;
 }
 
 .fullExplanation {
