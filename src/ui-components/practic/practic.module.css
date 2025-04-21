@@ -49,7 +49,7 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    height: 1050px;
+    height: 1100px;
   }
 
   .image {
@@ -59,13 +59,13 @@
     height: auto;
     display: flex;
     align-self: end;
-    /* left: 30%; */
     right: -8%;
     bottom: 0;
   }
 
   .explanationsContainer {
     width: 358px;
+    z-index: 20;
   }
 
   .explainList {
