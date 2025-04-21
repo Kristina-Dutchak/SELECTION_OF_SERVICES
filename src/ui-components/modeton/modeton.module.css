@@ -33,10 +33,11 @@
     flex-direction: column;
     background: none;
     height: 956px;
+    align-items: center;
   }
 
   .explanationContainer {
-    width: 95%;
+    width: 90%;
     margin-left: 10px;
     padding: 0;
     position: relative;

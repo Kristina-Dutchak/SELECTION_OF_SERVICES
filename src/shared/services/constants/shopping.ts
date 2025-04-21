@@ -7,7 +7,7 @@ export const SHOPPING_LINE_PRICES = [
   },
   {
     price: "5 000 ГРН",
-    type: "ОAЛАЙН",
+    type: "ОНЛАЙН",
   },
 ];
 

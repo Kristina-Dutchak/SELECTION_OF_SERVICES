@@ -47,7 +47,7 @@ export const ServiceType = ({
               </div>
               <div className={styles.service}>
                 {prices.map((price) => (
-                  <div className={styles.typeService} key={price.type}>
+                  <div className={styles.typeService} key={price.price}>
                     <span className={styles.price}>{price.price}</span>
                     <span className={styles.typeWork}>{price.type}</span>
                   </div>

@@ -32,17 +32,17 @@
   position: relative;
   color: #fff;
   text-align: left;
-  width: 95%;
+  width: 93%;
 }
 
 .title {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 800;
 }
 
 .subtitle {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -60,6 +60,6 @@
 
 @media (max-width: 480px) {
   .image {
-    left: -350px;
+    left: -335px;
   }
 }
