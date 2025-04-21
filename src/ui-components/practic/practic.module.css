@@ -2,14 +2,22 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 80vh;
   background: #a0a0a0;
   position: relative;
   overflow: hidden;
+  padding: 20px 20px;
+  box-sizing: border-box;
 }
 
 .image {
+  position: absolute;
   width: 30%;
   height: auto;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+
 }
 
 .titleContainer {
@@ -18,12 +26,12 @@
   text-align: left;
   position: relative;
   margin-top: 5%;
-  left: 10%;
+  width: 25%;
 }
 
 .explanationsContainer {
   position: relative;
-  width: 30%;
+  width: 20%;
 }
 
 .profession {
@@ -43,7 +51,7 @@
 .explainList {
   color: #fff;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1.3rem;
   position: relative;
   margin-top: 30%;
   right: 5%;
@@ -57,6 +65,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 30%;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -64,7 +74,7 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    height: 1100px;
+    height: 1120px;
     width: 100%;
   }
 
@@ -81,8 +91,9 @@
     height: auto;
     display: flex;
     align-self: end;
-    right: -8%;
+    /* right: 0; */
     bottom: 0;
+    left: 70%;
   }
 
   .explanationsContainer {
