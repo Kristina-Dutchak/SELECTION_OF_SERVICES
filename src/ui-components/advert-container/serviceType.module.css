@@ -29,19 +29,19 @@
   flex-direction: row;
   /* gap: 20px; */
   justify-content: space-between;
-  padding: 10px 10% 10px 5%;
+  padding: 10px 10px 10px 5px;
   box-sizing: border-box;
 }
 
 .title {
   font-size: 2rem;
   font-weight: 750;
+  text-align: left;
 }
 
 .pricesContainer {
   display: flex;
   flex-direction: row;
-  /* width: 90%; */
   margin-top: 10px;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .typeWork {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .fullInfo {
@@ -137,6 +137,8 @@
     top: 40px;
     height: auto;
     float: right;
+    padding: 10px 30px;
+    box-sizing: border-box;
   }
 
   .explanations {
@@ -159,7 +161,7 @@
   .pricesContainer {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     margin-top: 10px;
   }
@@ -177,5 +179,6 @@
   .explanationContainer {
     margin-top: 4%;
     align-items: center;
+    padding: 10px 20px;
   }
 }
