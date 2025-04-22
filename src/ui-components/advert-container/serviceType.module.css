@@ -14,7 +14,7 @@
 
 .fullExplanation {
   width: 100%;
-  background: #808080;
+  background: #a0a0a0;
 }
 
 .explanations {
@@ -152,7 +152,7 @@
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 32px;
     font-weight: 750;
     display: flex;
     justify-content: center;
