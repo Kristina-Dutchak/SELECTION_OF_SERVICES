@@ -131,7 +131,7 @@
   }
 
   .explanationContainer {
-    width: 80%;
+    width: 365px;
     flex-direction: column;
     position: relative;
     top: 40px;
@@ -152,7 +152,7 @@
   }
 
   .title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 750;
     display: flex;
     justify-content: center;
@@ -172,6 +172,12 @@
 
   .typeWork {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1024px) {
+  .explanationContainer {
+    width: 80%;
   }
 }
 
