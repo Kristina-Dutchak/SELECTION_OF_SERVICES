@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button } from "../Button/Button";
 import { Image } from "../Image/Image";
+import { MobileInfo } from "./MobileInfo";
 
 import styles from "./serviceType.module.css";
-import { MobileInfo } from "./MobileInfo";
 
 type Price = {
   price: string;
