@@ -20,9 +20,9 @@ export const MobileInfo = ({
         ))}
       </div>
       <div className={styles.whatIs}>
-        <p className={styles.titleFullInfo}>ЩО ВИ ОТРИМАЄТЕ?</p>
+        <p className={styles.titleFullInfo}>ЯК ВІДБУВАЄТЬСЯ?</p>
         <ul className={styles.list}>
-          {getList.map((item) => (
+          {happenList.map((item) => (
             <li key={item} className={styles.listItem}>
               {item}
             </li>
@@ -30,9 +30,9 @@ export const MobileInfo = ({
         </ul>
       </div>
       <div className={styles.whatIs}>
-        <p className={styles.titleFullInfo}>ЯК ВІДБУВАЄТЬСЯ?</p>
+        <p className={styles.titleFullInfo}>ЩО ВИ ОТРИМАЄТЕ?</p>
         <ul className={styles.list}>
-          {happenList.map((item) => (
+          {getList.map((item) => (
             <li key={item} className={styles.listItem}>
               {item}
             </li>
