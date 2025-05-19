@@ -1,4 +1,4 @@
-export const SHOPPING_TITLE = "ШОПІНГ СУПРОВІД"
+export const SHOPPING_TITLE = "ШОПІНГ-СУПРОВІД"
 
 export const SHOPPING_LINE_PRICES = [
   {
